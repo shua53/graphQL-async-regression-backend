@@ -104,9 +104,7 @@ query Predict($id: ID!) {
 
 ### Domain model
 - **Job**: `{ id, status, progress, submittedAt, startedAt?, finishedAt?, modelId?, error? }`  
-  Mirrors a real task runner and is perfect for polling.
-- **Model**: `{ id, kind, alpha?, fittedAt }` with `predict(x: Float!): Float!`  
-  Ke*eps prediction ergonomic and discoverable on the type.
+- **Model**: `{ id, kind, alpha?, fittedAt }` with `predict(x: Float!): Float!` 
 
 ### Async, job-based orchestration
 - `startRegression` enqueues work and returns a `Job` immediately.
